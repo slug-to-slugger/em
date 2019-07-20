@@ -10,7 +10,7 @@ class UsersController < ApplicationController
   # GET /users/1
   # GET /users/1.json
   def show
-    logger.debug params[:id]
+    logger.debug params
     id = params[:id]
     @user = User.find(id)
   end
@@ -22,6 +22,7 @@ class UsersController < ApplicationController
 
   # GET /users/1/edit
   def edit
+    
   end
 
   # POST /users
